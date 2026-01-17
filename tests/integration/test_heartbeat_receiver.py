@@ -49,12 +49,16 @@ def start_drone() -> None:
 #                            ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
 # =================================================================================================
 def stop(
-    controller: worker_controller.WorkerController
+    controller: worker_controller.WorkerController,
+    output_queue: queue_proxy_wrapper.QueueProxyWrapper,
+    main_logger: logger.Logger,
 ) -> None:
     """
     Stop the workers.
     """
     controller.request_exit()
+    output_queue.fill_and_drain_queue()
+    main_logger.info("Stopped workers", True)
 
 
 def read_queue(
@@ -127,16 +131,15 @@ def main() -> int:
     threading.Timer(
         HEARTBEAT_PERIOD * (NUM_TRIALS * 2 + DISCONNECT_THRESHOLD + NUM_DISCONNECTS + 2),
         stop,
-        (controller,),
+        (controller, output_queue, main_logger),
     ).start()
 
     # Read the main queue (worker outputs)
-    threading.Thread(target=read_queue, args=(output_queue.queue, main_logger)).start()
+    read_thread = threading.Thread(target=read_queue, args=(None, main_logger, output_queue.queue), daemon=True)
+    read_thread.start()
 
     heartbeat_receiver_worker.heartbeat_receiver_worker(
-        connection,
-        output_queue,
-        controller
+        connection, output_queue, controller
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

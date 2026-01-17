@@ -21,18 +21,16 @@ class HeartbeatReceiver:
     def create(
         cls,
         connection: mavutil.mavfile,
-        args,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> "tuple[True, 'HeartbeatReceiver'] | tuple[False, None]":
         """
         Falliable create (instantiation) method to create a HeartbeatReceiver object.
         """
-        
-        if connection is None:
-            local_logger.error("No connection!", True)
-            return False, None
+        try:
+            return (True, HeartbeatReceiver(cls.__private_key, connection, local_logger))
 
-        return True, HeartbeatReceiver(cls.__private_key, connection, local_logger)
+        except (Exception):
+            return (False, None)
 
     def __init__(
         self,
@@ -72,8 +70,8 @@ class HeartbeatReceiver:
 
         if self.is_connected:
             return "Connected"
-        else: 
-            return"Disconnected"
+        else:
+            return "Disconnected"
 
 
 # =================================================================================================
