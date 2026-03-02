@@ -29,7 +29,7 @@ class HeartbeatReceiver:
         try:
             return (True, HeartbeatReceiver(cls.__private_key, connection, local_logger))
 
-        except Exception:
+        except Exception:  # pylint: disable=broad-exception-caught
             return (False, None)
 
     def __init__(
@@ -47,7 +47,7 @@ class HeartbeatReceiver:
 
     def run(
         self,
-        args: object = None,  # Put your own arguments here
+        _args: object = None,  # Put your own arguments here
     ) -> str:
         """
         Attempt to recieve a heartbeat message.
@@ -70,8 +70,7 @@ class HeartbeatReceiver:
 
         if self.is_connected:
             return "Connected"
-        else:
-            return "Disconnected"
+        return "Disconnected"
 
 
 # =================================================================================================

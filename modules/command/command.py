@@ -8,7 +8,6 @@ from pymavlink import mavutil
 
 from ..common.modules.logger import logger
 from ..telemetry import telemetry
-from . import command
 
 
 class Position:
@@ -38,20 +37,20 @@ class Command:  # pylint: disable=too-many-instance-attributes
         cls,
         connection: mavutil.mavfile,
         target: Position,
-        args: object,  # Put your own arguments here
+        _args: object,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> "tuple[bool, 'Command | None']":
         """
         Falliable create (instantiation) method to create a Command object.
         """
-        return True, Command(cls.__private_key, connection, target, args, local_logger)
+        return True, Command(cls.__private_key, connection, target, _args, local_logger)
 
     def __init__(
         self,
         key: object,
         connection: mavutil.mavfile,
         target: Position,
-        args: object,  # Put your own arguments here
+        _args: object,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> None:
         assert key is Command.__private_key, "Use create() method"
@@ -63,7 +62,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         self._velocity_sum = [0.0, 0.0, 0.0]
         self._velocity_count = 0
 
-    def run(self, data: telemetry.TelemetryData, target: command.Position) -> "str | None":
+    def run(self, data: telemetry.TelemetryData, target: Position) -> "str | None":
         """
         Make a decision based on received telemetry data.
         """

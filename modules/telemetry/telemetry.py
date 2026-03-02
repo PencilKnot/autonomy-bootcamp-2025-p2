@@ -76,20 +76,20 @@ class Telemetry:
     def create(
         cls,
         connection: mavutil.mavfile,
-        args: object,  # Put your own arguments here
+        _args: object,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> "tuple[bool, 'Telemetry | None']":
         """
         Falliable create (instantiation) method to create a Telemetry object.
         """
         # Create a Telemetry object
-        return True, Telemetry(cls.__private_key, connection, args, local_logger)
+        return True, Telemetry(cls.__private_key, connection, _args, local_logger)
 
     def __init__(
         self,
         key: object,
         connection: mavutil.mavfile,
-        args: object,  # Put your own arguments here
+        _args: object,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> None:
         assert key is Telemetry.__private_key, "Use create() method"
@@ -100,7 +100,7 @@ class Telemetry:
 
     def run(
         self,
-        args: object,  # Put your own arguments here
+        _args: object,  # Put your own arguments here
     ) -> "TelemetryData | None":
         """
         Receive LOCAL_POSITION_NED and ATTITUDE messages from the drone,
