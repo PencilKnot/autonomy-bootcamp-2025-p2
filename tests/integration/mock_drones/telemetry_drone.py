@@ -69,7 +69,7 @@ def main() -> int:
                             YAW_SPEED,
                         )
                     # Not required, sends shouldn't raise exceptions
-                    except:  # pylint: disable=bare-except
+                    except Exception:  # pylint: disable=bare-except
                         local_logger.error("Drone: Could not send attitude")
                         return -1
                     local_logger.info(f"Drone: Sent attitude {attitude_count}")
@@ -89,7 +89,7 @@ def main() -> int:
                             0,
                         )
                     # Not required, sends shouldn't raise exceptions
-                    except:  # pylint: disable=bare-except
+                    except Exception:  # pylint: disable=bare-except
                         local_logger.error("Drone: Could not send position")
                         return -1
                     local_logger.info(f"Drone: Sent position {position_count}")

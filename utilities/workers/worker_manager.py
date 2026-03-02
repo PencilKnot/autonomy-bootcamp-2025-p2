@@ -20,7 +20,7 @@ class WorkerProperties:
     def create(
         cls,
         count: int,
-        target: "(...) -> object",  # type: ignore
+        target: "object",  # type: ignore
         work_arguments: "tuple",
         input_queues: "list[queue_proxy_wrapper.QueueProxyWrapper]",
         output_queues: "list[queue_proxy_wrapper.QueueProxyWrapper]",
@@ -61,7 +61,7 @@ class WorkerProperties:
         self,
         class_private_create_key: object,
         count: int,
-        target: "(...) -> object",  # type: ignore
+        target: "object",  # type: ignore
         work_arguments: "tuple",
         input_queues: "list[queue_proxy_wrapper.QueueProxyWrapper]",
         output_queues: "list[queue_proxy_wrapper.QueueProxyWrapper]",
@@ -98,7 +98,7 @@ class WorkerProperties:
         """
         return self.__count
 
-    def get_worker_target(self) -> "(...) -> object":  # type: ignore
+    def get_worker_target(self) -> "object":  # type: ignore
         """
         Returns the worker target.
         """
@@ -176,7 +176,7 @@ class WorkerManager:
         self.__local_logger = local_logger
 
     @staticmethod
-    def __create_single_worker(target: "(...) -> object", args: "tuple", local_logger: logger.Logger) -> "tuple[bool, mp.Process | None]":  # type: ignore
+    def __create_single_worker(target: "object", args: "tuple", local_logger: logger.Logger) -> "tuple[bool, mp.Process | None]":  # type: ignore
         """
         Creates a single worker.
 

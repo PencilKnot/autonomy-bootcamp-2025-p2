@@ -53,7 +53,7 @@ def main() -> int:
                     0,
                 )
             # Not strictly necessary, sends shouldn't raise exceptions
-            except:  # pylint: disable=bare-except
+            except Exception:  # pylint: disable=bare-except
                 local_logger.critical("Drone: Could not send a heartbeat")
                 return -3
             local_logger.info("Drone: Sent a heartbeat")
