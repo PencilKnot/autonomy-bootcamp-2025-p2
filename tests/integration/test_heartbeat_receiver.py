@@ -62,7 +62,7 @@ def stop(
 
 
 def read_queue(
-    args: object, main_logger: logger.Logger, queue: mp.Queue
+    _args: object, main_logger: logger.Logger, queue: mp.Queue
 ) -> None:  # Add any necessary arguments
     """
     Read and print the output queue.
