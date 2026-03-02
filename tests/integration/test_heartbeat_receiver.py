@@ -61,7 +61,7 @@ def stop(
     main_logger.info("Stopped workers", True)
 
 
-def read_queue(args, main_logger: logger.Logger, queue) -> None:  # Add any necessary arguments
+def read_queue(args: object, main_logger: logger.Logger, queue: mp.Queue) -> None:  # Add any necessary arguments
     """
     Read and print the output queue.
     """

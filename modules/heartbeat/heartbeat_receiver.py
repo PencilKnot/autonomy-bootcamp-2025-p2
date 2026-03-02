@@ -47,7 +47,7 @@ class HeartbeatReceiver:
 
     def run(
         self,
-        args=None,  # Put your own arguments here
+        args: object = None,  # Put your own arguments here
     ) -> str:
         """
         Attempt to recieve a heartbeat message.

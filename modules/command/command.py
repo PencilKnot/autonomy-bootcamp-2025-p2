@@ -38,9 +38,9 @@ class Command:  # pylint: disable=too-many-instance-attributes
         cls,
         connection: mavutil.mavfile,
         target: Position,
-        args,  # Put your own arguments here
+        args: object,  # Put your own arguments here
         local_logger: logger.Logger,
-    ):
+    ) -> "tuple[bool, 'Command | None']":
         """
         Falliable create (instantiation) method to create a Command object.
         """
@@ -51,7 +51,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         key: object,
         connection: mavutil.mavfile,
         target: Position,
-        args,  # Put your own arguments here
+        args: object,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> None:
         assert key is Command.__private_key, "Use create() method"
@@ -63,7 +63,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         self._velocity_sum = [0.0, 0.0, 0.0]
         self._velocity_count = 0
 
-    def run(self, data: telemetry.TelemetryData, target: command.Position):
+    def run(self, data: telemetry.TelemetryData, target: command.Position) -> "str | None":
         """
         Make a decision based on received telemetry data.
         """

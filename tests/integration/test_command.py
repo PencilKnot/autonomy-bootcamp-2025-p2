@@ -78,7 +78,7 @@ def read_queue(
 
 def put_queue(
     input_queue: queue_proxy_wrapper.QueueProxyWrapper,
-    path,
+    path: list,
 ) -> None:
     """
     Place mocked inputs into the input queue periodically with period TELEMETRY_PERIOD.
