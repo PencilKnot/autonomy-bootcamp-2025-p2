@@ -23,7 +23,7 @@ def command_worker(
     output_queue: queue_proxy_wrapper.QueueProxyWrapper,
     controller: worker_controller.WorkerController,
     z_speed,
-    turning_speed
+    turning_speed,
 ) -> None:
     """
     Worker process.

@@ -37,7 +37,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         cls,
         connection: mavutil.mavfile,
         target: Position,
-        _args: object, # Put your own arguments here
+        _args: object,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> "tuple[bool, 'Command | None']":
         """
@@ -62,12 +62,9 @@ class Command:  # pylint: disable=too-many-instance-attributes
         self._velocity_sum = [0.0, 0.0, 0.0]
         self._velocity_count = 0
 
-    def run(self,
-            data: telemetry.TelemetryData,
-            target: Position,
-            z_speed,
-            turning_speed
-        ) -> "str | None":
+    def run(
+        self, data: telemetry.TelemetryData, target: Position, z_speed, turning_speed
+    ) -> "str | None":
         """
         Make a decision based on received telemetry data.
         """
@@ -115,7 +112,9 @@ class Command:  # pylint: disable=too-many-instance-attributes
         if abs(deg) > 5:
             # convert to mavlink direction to match convention (-1 = ccw, 1 = cw)
             direction = -1 if deg > 0 else 1
-            self.connection.mav.command_long_send(1, 0, 115, 0, abs(deg), turning_speed, direction, 1, 0, 0, 0)
+            self.connection.mav.command_long_send(
+                1, 0, 115, 0, abs(deg), turning_speed, direction, 1, 0, 0, 0
+            )
             msg.append(f"CHANGE YAW: {round(deg, 3)}")
 
         return "\n".join(msg) if msg else None

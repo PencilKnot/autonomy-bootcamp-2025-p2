@@ -63,7 +63,7 @@ def stop(controller: worker_controller.WorkerController) -> None:
 def read_queue(
     output_queue: queue_proxy_wrapper.QueueProxyWrapper,
     main_logger: logger.Logger,
-    controller: worker_controller.WorkerController
+    controller: worker_controller.WorkerController,
 ) -> None:
     """
     Read and print the output queue.
@@ -239,7 +239,9 @@ def main() -> int:
     read_thread = threading.Thread(target=read_queue, args=(output_queue, main_logger), daemon=True)
     read_thread.start()
 
-    command_worker.command_worker(connection, TARGET, input_queue, output_queue, controller, Z_SPEED, TURNING_SPEED)
+    command_worker.command_worker(
+        connection, TARGET, input_queue, output_queue, controller, Z_SPEED, TURNING_SPEED
+    )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
     # =============================================================================================

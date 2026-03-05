@@ -117,7 +117,9 @@ class Telemetry:
 
         # both are received or 1 second has passed
         while time.time() - start < 1:
-            msg = self.connection.recv_match(type=["LOCAL_POSITION_NED", "ATTITUDE"], blocking=False)
+            msg = self.connection.recv_match(
+                type=["LOCAL_POSITION_NED", "ATTITUDE"], blocking=False
+            )
             if msg is not None:
                 if msg.get_type() == "LOCAL_POSITION_NED":
                     position = msg

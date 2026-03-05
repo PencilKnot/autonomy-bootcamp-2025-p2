@@ -65,7 +65,7 @@ def read_queue(
     _args: object,
     main_logger: logger.Logger,
     queue: mp.Queue,
-    controller: worker_controller.WorkerController
+    controller: worker_controller.WorkerController,
 ) -> None:  # Add any necessary arguments
     """
     Read and print the output queue.

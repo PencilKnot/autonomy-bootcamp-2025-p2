@@ -56,7 +56,7 @@ def stop(controller: worker_controller.WorkerController) -> None:
 def read_queue(
     output_queue: queue_proxy_wrapper.QueueProxyWrapper,
     main_logger: logger.Logger,
-    controller: worker_controller.WorkerController
+    controller: worker_controller.WorkerController,
 ) -> None:
     """
     Read and print the output queue.
@@ -128,7 +128,9 @@ def main() -> int:
     threading.Timer(TELEMETRY_PERIOD * NUM_TRIALS * 2 + NUM_FAILS, stop, (controller,)).start()
 
     # Read the main queue (worker outputs)
-    read_thread = threading.Thread(target=read_queue, args=(output_queue, main_logger, controller), daemon=True)
+    read_thread = threading.Thread(
+        target=read_queue, args=(output_queue, main_logger, controller), daemon=True
+    )
     read_thread.start()
 
     telemetry_worker.telemetry_worker(connection, output_queue, controller)
