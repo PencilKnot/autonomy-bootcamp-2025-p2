@@ -97,6 +97,7 @@ class Telemetry:
         # Do any intializiation here
         self.connection = connection
         self.local_logger = local_logger
+        self.last_timestamp = 0
 
     def run(
         self,
@@ -116,20 +117,21 @@ class Telemetry:
 
         # both are received or 1 second has passed
         while time.time() - start < 1:
-            pos_msg = self.connection.recv_match(type="LOCAL_POSITION_NED", blocking=False)
-            if pos_msg is not None:
-                position = pos_msg
-
-            att_msg = self.connection.recv_match(type="ATTITUDE", blocking=False)
-            if att_msg is not None:
-                attitude = att_msg
+            msg = self.connection.recv_match(type=["LOCAL_POSITION_NED", "ATTITUDE"], blocking=False)
+            if msg is not None:
+                if msg.get_type() == "LOCAL_POSITION_NED":
+                    position = msg
+                elif msg.get_type() == "ATTITUDE":
+                    attitude = msg
 
             # if both are received
             if position is not None and attitude is not None:
                 latest = max(attitude.time_boot_ms, position.time_boot_ms)
+                if latest > self.last_timestamp:
+                    self.last_timestamp = latest
 
                 return TelemetryData(
-                    time_since_boot=latest,
+                    time_since_boot=self.last_timestamp,
                     x=position.x,
                     y=position.y,
                     z=position.z,

@@ -56,7 +56,7 @@ class HeartbeatReceiver:
         """
 
         # Add blocking to check once per second
-        msg = self.connection.recv_match(type="HEARTBEAT", blocking=True, timeout=1.5)
+        msg = self.connection.recv_match(type="HEARTBEAT", blocking=True, timeout=1.0)
 
         if msg is not None:
             self.missed_count = 0

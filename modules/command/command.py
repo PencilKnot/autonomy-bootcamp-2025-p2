@@ -37,7 +37,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         cls,
         connection: mavutil.mavfile,
         target: Position,
-        _args: object,  # Put your own arguments here
+        _args: object, # Put your own arguments here
         local_logger: logger.Logger,
     ) -> "tuple[bool, 'Command | None']":
         """
@@ -62,7 +62,12 @@ class Command:  # pylint: disable=too-many-instance-attributes
         self._velocity_sum = [0.0, 0.0, 0.0]
         self._velocity_count = 0
 
-    def run(self, data: telemetry.TelemetryData, target: Position) -> "str | None":
+    def run(self,
+            data: telemetry.TelemetryData,
+            target: Position,
+            z_speed,
+            turning_speed
+        ) -> "str | None":
         """
         Make a decision based on received telemetry data.
         """
@@ -93,7 +98,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         altitude_delta = target.z - data.z
         if abs(altitude_delta) > 0.5:
             # param1 should be the target altitude (absolute), not the delta
-            self.connection.mav.command_long_send(1, 0, 113, 0, target.z, 0, 0, 0, 0, 0, 0)
+            self.connection.mav.command_long_send(1, 0, 113, 0, z_speed, 0, 0, 0, 0, 0, target.z)
             msg.append(f"CHANGE ALTITUDE: {round(altitude_delta, 3)}")
 
         # Adjust direction (yaw) using MAV_CMD_CONDITION_YAW (115). Must use relative angle to current state
@@ -110,7 +115,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         if abs(deg) > 5:
             # convert to mavlink direction to match convention (-1 = ccw, 1 = cw)
             direction = -1 if deg > 0 else 1
-            self.connection.mav.command_long_send(1, 0, 115, 0, abs(deg), 0, direction, 1, 0, 0, 0)
+            self.connection.mav.command_long_send(1, 0, 115, 0, abs(deg), turning_speed, direction, 1, 0, 0, 0)
             msg.append(f"CHANGE YAW: {round(deg, 3)}")
 
         return "\n".join(msg) if msg else None

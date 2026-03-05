@@ -22,6 +22,8 @@ def command_worker(
     input_queue: queue_proxy_wrapper.QueueProxyWrapper,
     output_queue: queue_proxy_wrapper.QueueProxyWrapper,
     controller: worker_controller.WorkerController,
+    z_speed,
+    turning_speed
 ) -> None:
     """
     Worker process.
@@ -62,9 +64,9 @@ def command_worker(
     while not controller.is_exit_requested():
         controller.check_pause()
 
-        while not input_queue.queue.empty():
+        if not input_queue.queue.empty():
             data = input_queue.queue.get()
-            result = com.run(data, target)
+            result = com.run(data, target, z_speed, turning_speed)
             if result is not None:
                 output_queue.queue.put(result)
 

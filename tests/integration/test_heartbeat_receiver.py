@@ -62,12 +62,15 @@ def stop(
 
 
 def read_queue(
-    _args: object, main_logger: logger.Logger, queue: mp.Queue
+    _args: object,
+    main_logger: logger.Logger,
+    queue: mp.Queue,
+    controller: worker_controller.WorkerController
 ) -> None:  # Add any necessary arguments
     """
     Read and print the output queue.
     """
-    while True:
+    while not controller.is_exit_requested():
         main_logger.info(queue.get())
 
 
@@ -134,7 +137,7 @@ def main() -> int:
 
     # Read the main queue (worker outputs)
     read_thread = threading.Thread(
-        target=read_queue, args=(None, main_logger, output_queue.queue), daemon=True
+        target=read_queue, args=(None, main_logger, output_queue.queue, controller), daemon=True
     )
     read_thread.start()
 
