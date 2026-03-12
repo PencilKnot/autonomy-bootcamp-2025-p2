@@ -76,7 +76,7 @@ def read_queue(
                     main_logger.info(msg, True)
             except Exception:  # pylint: disable=broad-exception-caught
                 pass
-    except Exception:
+    except OSError:
         pass
 
 
