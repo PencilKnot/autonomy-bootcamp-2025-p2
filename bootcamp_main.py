@@ -38,6 +38,8 @@ TELEMETRY_WORKER_COUNT = 1
 COMMAND_WORKER_COUNT = 1
 
 TARGET = command.Position(10, 20, 30)
+Z_SPEED = 1
+TURNING_SPEED = 5
 RUN_TIME = 100
 
 # =================================================================================================
@@ -145,7 +147,7 @@ def main() -> int:
     result, command_worker_properties = worker_manager.WorkerProperties.create(
         count=COMMAND_WORKER_COUNT,
         target=command_worker.command_worker,
-        work_arguments=(connection, TARGET),
+        work_arguments=(connection, TARGET, Z_SPEED, TURNING_SPEED),
         input_queues=[telemetry_to_command_queue],
         output_queues=[command_to_main_queue],
         controller=controller,
@@ -210,14 +212,14 @@ def main() -> int:
     connected = True
 
     while time.time() - start_time < RUN_TIME and connected:
-        while not heartbeat_receiver_to_main_queue.queue.empty():
+        if not heartbeat_receiver_to_main_queue.queue.empty():
             status = heartbeat_receiver_to_main_queue.queue.get()
             main_logger.info(f"Connection status: {status}", True)
             if status == "Disconnected":
                 connected = False
                 break
 
-        while not command_to_main_queue.queue.empty():
+        if not command_to_main_queue.queue.empty():
             command_msg = command_to_main_queue.queue.get()
             main_logger.info(f"Command: {command_msg}", True)
 

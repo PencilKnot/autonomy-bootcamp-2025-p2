@@ -68,13 +68,16 @@ def read_queue(
     """
     Read and print the output queue.
     """
-    while not controller.is_exit_requested():
-        try:
-            if not output_queue.queue.empty():
-                msg = output_queue.queue.get()
-                main_logger.info(msg, True)
-        except Exception:  # pylint: disable=broad-exception-caught
-            pass
+    try:
+        while not controller.is_exit_requested():
+            try:
+                if not output_queue.queue.empty():
+                    msg = output_queue.queue.get()
+                    main_logger.info(msg, True)
+            except Exception:  # pylint: disable=broad-exception-caught
+                pass
+    except Exception:
+        pass
 
 
 def put_queue(
@@ -236,11 +239,13 @@ def main() -> int:
     put_thread.start()
 
     # Read the main queue (worker outputs)
-    read_thread = threading.Thread(target=read_queue, args=(output_queue, main_logger), daemon=True)
+    read_thread = threading.Thread(
+        target=read_queue, args=(output_queue, main_logger, controller), daemon=True
+    )
     read_thread.start()
 
     command_worker.command_worker(
-        connection, TARGET, input_queue, output_queue, controller, Z_SPEED, TURNING_SPEED
+        connection, TARGET, Z_SPEED, TURNING_SPEED, input_queue, output_queue, controller
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

@@ -1,3 +1,3 @@
-16:09:39: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/modules/common/modules/logger/logger_main_setup.py | setup_main_logger | 62] main logger initialized
-16:09:40: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_sender.py | main | 90] Connected!
-16:09:51: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_sender.py | stop | 55] Stopped the workers
+23:29:43: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/modules/common/modules/logger/logger_main_setup.py | setup_main_logger | 62] main logger initialized
+23:29:44: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_sender.py | main | 90] Connected!
+23:29:54: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_sender.py | stop | 55] Stopped the workers

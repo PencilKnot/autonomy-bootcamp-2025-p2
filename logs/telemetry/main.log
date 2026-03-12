@@ -1,6 +1,6 @@
-17:58:40: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/modules/common/modules/logger/logger_main_setup.py | setup_main_logger | 62] main logger initialized
-17:58:41: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | main | 111] Connected!
-17:58:41: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:00: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/modules/common/modules/logger/logger_main_setup.py | setup_main_logger | 62] main logger initialized
+23:33:01: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | main | 111] Connected!
+23:33:01: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 0,
             x: 0.0,
             y: 0.0,
@@ -15,7 +15,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:42: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:02: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 500,
             x: 0.5,
             y: 0.0,
@@ -30,7 +30,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:42: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:02: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 1000,
             x: 1.0,
             y: 0.0,
@@ -45,7 +45,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:43: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:03: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 1500,
             x: 1.5,
             y: 0.0,
@@ -60,7 +60,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:43: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:03: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 2000,
             x: 2.0,
             y: 0.0,
@@ -75,7 +75,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:44: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:04: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 2500,
             x: 2.5,
             y: 0.0,
@@ -90,7 +90,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:44: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:04: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 3000,
             x: 3.0,
             y: 0.0,
@@ -105,7 +105,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:45: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:05: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 3500,
             x: 3.5,
             y: 0.0,
@@ -120,7 +120,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:45: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:05: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4000,
             x: 4.0,
             y: 0.0,
@@ -135,7 +135,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:46: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:06: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 4.5,
             y: 0.0,
@@ -150,7 +150,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:49: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:09: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 0.0,
             y: 0.0,
@@ -165,7 +165,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:50: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:10: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 0.3333333432674408,
             y: 0.0,
@@ -180,7 +180,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:50: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:10: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 0.6666666865348816,
             y: 0.0,
@@ -195,7 +195,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:51: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:11: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 1.3333333730697632,
             y: 0.0,
@@ -210,7 +210,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:51: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:11: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 1.6666666269302368,
             y: 0.0,
@@ -225,7 +225,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:52: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:12: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 2.3333332538604736,
             y: 0.0,
@@ -240,7 +240,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:52: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:12: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 2.6666667461395264,
             y: 0.0,
@@ -255,7 +255,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:53: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:13: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 3.3333332538604736,
             y: 0.0,
@@ -270,7 +270,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:53: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:13: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 3.6666667461395264,
             y: 0.0,
@@ -285,7 +285,7 @@
             pitch_speed: 0.0,
             yaw_speed: 3.1415927410125732
         }
-17:58:54: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
+23:33:14: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_telemetry.py | read_queue | 68] {
             time_since_boot: 4500,
             x: 4.333333492279053,
             y: 0.0,

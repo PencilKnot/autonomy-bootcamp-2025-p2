@@ -1,29 +1,27 @@
-16:13:54: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/modules/common/modules/logger/logger_main_setup.py | setup_main_logger | 62] main logger initialized
-16:13:55: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | main | 115] Connected!
-16:13:55: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:13:56: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:13:57: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:13:58: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:13:58: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:13:59: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:13:59: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:00: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:01: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:02: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:03: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:04: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Disconnected
-16:14:05: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Disconnected
-16:14:06: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Disconnected
-16:14:07: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Disconnected
-16:14:08: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:09: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:09: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:10: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:11: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:11: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:12: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:13: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:14: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:15: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
-16:14:15: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | stop | 61] Stopped workers
-16:14:16: [INFO] [/home/pencilknot/Documents/Programming/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:03: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/modules/common/modules/logger/logger_main_setup.py | setup_main_logger | 62] main logger initialized
+23:32:04: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | main | 115] Connected!
+23:32:04: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:05: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:06: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:07: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:08: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:08: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:09: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:10: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:11: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:12: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:13: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Disconnected
+23:32:14: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Disconnected
+23:32:15: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Disconnected
+23:32:16: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Disconnected
+23:32:17: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:18: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:19: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:20: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:20: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:21: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:22: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:23: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:24: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
+23:32:24: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | stop | 61] Stopped workers
+23:32:25: [INFO] [/home/pencilknot/Documents/Programming/Design Teams/WARG Autonomy Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_heartbeat_receiver.py | read_queue | 74] Connected
